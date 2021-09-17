@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Calculator </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navegator">
+                <h1 id="navTitle">CALCULATOR</h1>
+            </div>
+        </nav>
+
+        <section>
+            <div class="calculator">
+                <div class="screen">
+                    <input type="text", id= "point", value="", disabled , placeholder="0">
+                </div>
+                <div class="keyboard">
+                    <button id="c" value="c"> C </button>
+                    <button id="ce" value="ce"> CE </button> 
+                    <button id="delete" value="del""> Del </button>
+                    <button id="outOf" value="/"> / </button>
+                    <button id="seven" value="7"> 7 </button>
+                    <button id="eight" value="8"> 8 </button>
+                    <button id="nine" value="9"> 9 </button>
+                    <button id="times" value="*"> * </button>
+                    <button id="four" value="4"> 4 </button>
+                    <button id="five" value="5"> 5 </button>
+                    <button id="six" value="6"> 6 </button>
+                    <button id="plus" value="+"> + </button>
+                    <button id="one" value="1"> 1 </button>
+                    <button id="two" value="2"> 2 </button>
+                    <button id="three" value="3"> 3 </button>
+                    <button id="rest" value="-"> - </button>
+                    <button id="zero" value="0"> 0 </button>
+                    <button id="dot" value="."> . </button>
+                    <button id="equal" value="equal"> = </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="history">
+                <h2 id="opLabel"> Operations </h1>
+                <div id=overflowLabel><p id="hist"></p></div>
+                
+            </div>
+        </section>
+        <footer>
+            <div id="foot"> Made by <a href="https://github.com/CarlosDanielEspinoza" id="gitLink" target="_blank">Carlos Espinoza</a>  </div>
+        </footer>
+    </body>
+</html>

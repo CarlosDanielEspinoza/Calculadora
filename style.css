@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Orbitron;
+    src: url(fonts/Orbitron-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@keyframes buttonAnimation{
+    0% { border-color: rgb(107, 75, 75);
+         background-color: rgb(107, 75, 75);}
+    50% { border-color: rgb(173, 120, 120);
+         background-color: rgb(173, 120, 120);}
+    100% {border-color: rgb(107, 75, 75);
+         background-color: rgb(107, 75, 75); }
+}
+#navTitle{
+    position: relative;
+    top:-15%;
+    font-family: Orbitron;
+}
+
+body{
+    background-color: rgb(231, 228, 228);
+    padding: 0%;
+    overflow-x: hidden;
+}
+.navegator{
+    margin: 0%;
+    position: absolute;
+    padding-top: 0%;
+    user-select: none;
+    left: 0%;
+    top: 0%;
+    background-color: rgb(107, 75, 75);
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    color: rgb(231, 228, 228);
+    font-family: Helvetica;
+    box-shadow: 0px 5px 5px rgb(128, 128, 128);
+    font-size: 95%;
+}
+
+.calculator{
+    position: absolute;
+    user-select: none;
+    overflow:hidden;
+    padding: 0%;
+    right: 10%;
+    top: 18%;
+    width: 22%;
+    height: 66%;
+    background: linear-gradient(rgb(233, 203, 164), rgb(126, 88, 88));
+    border-radius: 10px;
+}
+.screen{
+    position:absolute;
+    overflow:hidden;
+    text-overflow: clip;
+    background: linear-gradient(rgb(243, 243, 243),white);
+    padding:0%;
+    margin: 0%;
+    width: 90%;
+    height: 16%;
+    right: 5%;
+    top: 3%;
+    border-radius: 10px;
+}
+.keyboard{
+    position: absolute;
+    padding:0%;
+    margin-left:5%;
+    top: 20%;
+    width: 93%;
+    height: 38%;
+    
+}
+button{
+    position: relative;
+    user-select: none;
+    left:0%;
+    top: 0%;
+    right: 1%;
+    bottom: 1%;
+    border-radius: 10%;
+    border: 3%;
+    border-style: solid;
+    border-color: rgb(107, 75, 75);
+    background-color: rgb(107, 75, 75);
+    margin-left: 0%;
+    margin-top: 3%;
+    width: 23%;
+    height: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+    text-align: center;
+    color: rgb(231, 228, 228);
+    transition-property: border-color, background-color;
+    transition-duration: 0.2s;
+}
+button:active{
+    animation-name: buttonAnimation;
+    animation-duration: 0.2s;
+}
+
+button:hover{
+    border-color: rgb(122, 85, 85);
+    background-color: rgb(122, 85, 85);
+    
+}
+#zero{
+    width: 47.5%;
+}
+#point{
+    background-color: rgba(231, 228, 228,0);
+    border-color: rgba(114, 77, 77, 0);
+    outline: none;
+    width: 90%;
+    margin-top: 5%;
+    color: rgb(126, 88, 88);
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    user-select: none;
+}
+#foot{
+    margin: 0%;
+    position: absolute;
+    padding-top: 1%;
+    user-select: none;
+    left: 0%;
+    bottom: 0%;
+    background-color: rgb(107, 75, 75);
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    color: rgb(231, 228, 228);
+    font-family: Helvetica;
+    box-shadow: 0px 5px 5px rgb(128, 128, 128);
+    font-size: 60%;
+}
+#gitLink{
+    color: rgb(236, 220, 220);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.1s;
+}
+#gitLink:hover{
+    color:rgb(173, 120, 120);
+}
+
+#history{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: whitesmoke;
+    width: 25%;
+    height: 60%;
+    padding-top: 0%;
+    border: solid;
+    border-color: whitesmoke;
+    border-radius: 2%;
+}
+#opLabel{
+    margin: 2%;
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 120%;
+    color:rgb(107, 75, 75);
+}
+#overflowLabel{
+    position: absolute;
+    padding: 0%;
+    top: 12%;
+    left: 2%;
+    width: 95%;
+    height: 85%;
+    overflow: auto;
+}
+#hist{
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    margin: 0%;
+    color: rgb(107, 75, 75);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+}
