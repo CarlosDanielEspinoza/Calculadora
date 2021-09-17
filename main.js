@@ -50,7 +50,8 @@ function btnOptions(x){ //Fuction of Actions
 
     } else if(conD == "equal" && inputPrev != ""){ //Result
         let result = eval(inputPrev);
-        history.innerHTML += inputPrev + " = " + result + "<br>";
+        result = result;
+        history.innerHTML += inputPrev + " = " + result.toFixed(2) + "<br>";
         inputEnt.setAttribute("value",result);
     }
 }
